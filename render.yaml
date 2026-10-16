@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bang-online
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.cjs
+    healthCheckPath: /healthz
